@@ -84,14 +84,15 @@ const ContactCTA = () => {
               <p className="text-xs md:text-sm text-gray-500 italic text-center">当社スタッフにお任せください！</p>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
-              <a href="#contact-form" className="w-full sm:w-auto">
+            {/* ボタン配置を改善 - ボタンを中央揃えで横並びに */}
+            <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a href="#contact-form" className="w-full">
                 <Button className="w-full bg-agri-green hover:bg-agri-green/90 text-white font-medium text-base py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                   無料相談する
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <a href="tel:03-1234-5678" className="w-full sm:w-auto mt-4 sm:mt-0">
+              <a href="tel:03-1234-5678" className="w-full">
                 <Button variant="outline" className="w-full border-agri-green text-agri-green hover:bg-agri-green/10 font-medium text-base py-6 rounded-lg transition-all duration-300">
                   <PhoneCall className="mr-2 h-5 w-5" />
                   今すぐ電話する
