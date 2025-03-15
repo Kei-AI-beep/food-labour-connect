@@ -4,8 +4,20 @@ import { HelpCircle } from "lucide-react";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="section-container py-20 bg-agri-green/5">
-      <div className="max-w-4xl mx-auto">
+    <section id="faq" className="section-container py-20 bg-agri-green/5 relative overflow-hidden">
+      {/* 背景の装飾要素 */}
+      <div className="absolute inset-0 pointer-events-none opacity-30 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-agri-green/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-agri-blue/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-64 h-64 bg-agri-earth/10 rounded-full blur-3xl" />
+        
+        {/* 背景の幾何学模様 */}
+        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-agri-green/20 rounded-full" />
+        <div className="absolute bottom-20 right-10 w-16 h-16 border-2 border-agri-green/20 rounded-full" />
+        <div className="absolute top-1/2 right-1/4 w-12 h-12 border-2 border-agri-green/20 rounded-full" />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-12">
           <span className="chip mb-3">よくある質問</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -16,7 +28,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 fade-up">
+        <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 fade-up relative z-10">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="border-b border-gray-200 py-2">
               <AccordionTrigger className="text-lg font-medium hover:no-underline">

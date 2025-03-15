@@ -4,10 +4,25 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-      {/* Background decorative elements */}
+      {/* 背景装飾要素 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-agri-green/5 rounded-full blur-3xl" />
         <div className="absolute top-1/3 -left-24 w-72 h-72 bg-agri-blue/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-agri-earth/5 rounded-full blur-3xl" />
+        
+        {/* 追加の装飾 */}
+        <div className="absolute top-1/4 right-1/3 w-20 h-20 border-2 border-agri-green/20 rounded-full" />
+        <div className="absolute bottom-1/3 left-1/4 w-16 h-16 border-2 border-agri-green/20 rounded-full" />
+        
+        {/* 背景パターン */}
+        <div className="absolute inset-0 opacity-5">
+          <img 
+            src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -42,6 +57,9 @@ const Hero = () => {
                 className="w-full object-cover h-64 sm:h-80 transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-6 text-white text-left">
+                <p className="text-sm md:text-base font-medium">現場の声を徹底的に聴き、最適な人材ソリューションを提供</p>
+              </div>
             </div>
           </div>
         </div>
