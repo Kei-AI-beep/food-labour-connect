@@ -29,7 +29,7 @@ const ContactCTA = () => {
   }, []);
 
   return (
-    <section id="contact" ref={sectionRef} className="section-container py-20">
+    <section id="contact" ref={sectionRef} className="section-container py-20 bg-gradient-to-b from-white to-agri-green/5">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-right">
@@ -72,6 +72,15 @@ const ContactCTA = () => {
                   <p className="text-gray-600">〒100-0001 東京都千代田区1-1-1</p>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 mb-8">
+              <img 
+                src="https://images.unsplash.com/photo-1594761051196-fcce0bc83542?q=80&w=1000" 
+                alt="当社スタッフによる現場訪問の様子" 
+                className="w-full h-48 object-cover rounded-md mb-4" 
+              />
+              <p className="text-sm text-gray-500 italic text-center">当社スタッフによる現場訪問の様子</p>
             </div>
 
             <a href="#contact-form" className="btn-primary">

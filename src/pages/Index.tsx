@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Research from '@/components/Research';
 import Testimonials from '@/components/Testimonials';
+import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import Footer from '@/components/Footer';
 import { initScrollAnimation } from '@/utils/scrollAnimation';
@@ -36,6 +37,7 @@ const Index = () => {
         <Features />
         <Research />
         <Testimonials />
+        <FAQ />
         <ContactCTA />
       </main>
       <Footer />
