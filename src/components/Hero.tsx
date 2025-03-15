@@ -6,18 +6,18 @@ const Hero = () => {
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
       {/* 背景装飾要素 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-agri-green/5 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -left-24 w-72 h-72 bg-agri-blue/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-agri-earth/5 rounded-full blur-3xl" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-agri-green/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -left-24 w-72 h-72 bg-agri-blue/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-agri-earth/20 rounded-full blur-3xl" />
         
         {/* 追加の装飾 */}
-        <div className="absolute top-1/4 right-1/3 w-20 h-20 border-2 border-agri-green/20 rounded-full" />
-        <div className="absolute bottom-1/3 left-1/4 w-16 h-16 border-2 border-agri-green/20 rounded-full" />
+        <div className="absolute top-1/4 right-1/3 w-20 h-20 border-2 border-agri-green/40 rounded-full" />
+        <div className="absolute bottom-1/3 left-1/4 w-16 h-16 border-2 border-agri-green/40 rounded-full" />
         
         {/* 背景パターン */}
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-15">
           <img 
-            src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
+            src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
             alt="" 
             className="w-full h-full object-cover"
           />

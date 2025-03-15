@@ -4,17 +4,24 @@ import { HelpCircle } from "lucide-react";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="section-container py-20 bg-agri-green/5 relative overflow-hidden">
+    <section id="faq" className="section-container py-20 bg-agri-green/10 relative overflow-hidden">
       {/* 背景の装飾要素 */}
-      <div className="absolute inset-0 pointer-events-none opacity-30 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-agri-green/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-agri-blue/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-64 h-64 bg-agri-earth/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 pointer-events-none opacity-60 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-agri-green/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-agri-blue/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-64 h-64 bg-agri-earth/20 rounded-full blur-3xl" />
         
         {/* 背景の幾何学模様 */}
-        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-agri-green/20 rounded-full" />
-        <div className="absolute bottom-20 right-10 w-16 h-16 border-2 border-agri-green/20 rounded-full" />
-        <div className="absolute top-1/2 right-1/4 w-12 h-12 border-2 border-agri-green/20 rounded-full" />
+        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-agri-green/30 rounded-full" />
+        <div className="absolute bottom-20 right-10 w-16 h-16 border-2 border-agri-green/30 rounded-full" />
+        <div className="absolute top-1/2 right-1/4 w-12 h-12 border-2 border-agri-green/30 rounded-full" />
+        
+        {/* 農業関連の背景パターン */}
+        <img 
+          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
+          alt="" 
+          className="absolute w-full h-full object-cover opacity-10"
+        />
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -28,12 +35,12 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 fade-up relative z-10">
+        <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200 p-8 fade-up relative z-10">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="border-b border-gray-200 py-2">
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
-                  <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
+                  <div className="bg-agri-green/20 rounded-full p-2 mr-4 flex-shrink-0">
                     <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>とりあえず登録だけでも可能ですか？</span>
@@ -49,7 +56,7 @@ const FAQ = () => {
             <AccordionItem value="item-2" className="border-b border-gray-200 py-2">
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
-                  <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
+                  <div className="bg-agri-green/20 rounded-full p-2 mr-4 flex-shrink-0">
                     <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>どのような人材を紹介していただけますか？</span>
@@ -65,7 +72,7 @@ const FAQ = () => {
             <AccordionItem value="item-3" className="border-b border-gray-200 py-2">
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
-                  <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
+                  <div className="bg-agri-green/20 rounded-full p-2 mr-4 flex-shrink-0">
                     <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>費用はどのようになっていますか？</span>

@@ -61,7 +61,7 @@ const Research = () => {
   }, []);
 
   return (
-    <section id="research" ref={sectionRef} className="section-container bg-accent/50 rounded-3xl my-20 fade-up overflow-hidden">
+    <section id="research" ref={sectionRef} className="section-container bg-accent/70 rounded-3xl my-20 fade-up overflow-hidden">
       <div className="text-center mb-16">
         <span className="chip mb-3">差別化ポイント</span>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -88,7 +88,7 @@ const Research = () => {
           <p className="text-gray-600 mb-6">
             これらの条件を正確に把握せずに人材を送り込んでも、すぐに離職してしまうケースが多発。私たちは現場の実態を徹底的に理解することで、ミスマッチを防ぎ、長期的に活躍できる人材を見つけ出します。
           </p>
-          <div className="bg-white p-4 rounded-lg border border-agri-green/30 shadow-sm">
+          <div className="bg-white p-4 rounded-lg border border-agri-green/50 shadow-md">
             <p className="text-sm text-agri-green-dark font-medium">
               「人材紹介会社は現場を見ずに人を送ってくる」というよくある不満を解消します。
             </p>
@@ -101,7 +101,7 @@ const Research = () => {
           <div
             key={index}
             ref={el => stepRefs.current[index] = el}
-            className="research-card scale-up stagger-item bg-white/90"
+            className="research-card scale-up stagger-item bg-white/95 shadow-md border-agri-green/30 border"
             style={{ transitionDelay: `${index * 0.1}s` }}
           >
             <div className="text-3xl font-bold text-agri-green mb-4">{step.number}</div>

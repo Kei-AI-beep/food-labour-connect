@@ -63,18 +63,18 @@ const Features = () => {
   return (
     <section id="features" ref={sectionRef} className="section-container fade-up relative overflow-hidden">
       {/* 背景装飾 */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-40">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-70">
         <img 
-          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
+          src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
           alt="" 
-          className="absolute w-full h-full object-cover opacity-10"
+          className="absolute w-full h-full object-cover opacity-20"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-transparent to-white"></div>
         
         {/* 幾何学的な装飾要素 */}
-        <div className="absolute top-40 left-10 w-40 h-40 bg-agri-green/5 rounded-full"></div>
-        <div className="absolute bottom-20 right-10 w-60 h-60 bg-agri-earth/5 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/3 w-20 h-20 border-2 border-agri-green/10 rounded-full"></div>
+        <div className="absolute top-40 left-10 w-40 h-40 bg-agri-green/15 rounded-full"></div>
+        <div className="absolute bottom-20 right-10 w-60 h-60 bg-agri-earth/15 rounded-full"></div>
+        <div className="absolute top-1/3 right-1/3 w-20 h-20 border-2 border-agri-green/30 rounded-full"></div>
       </div>
 
       <div className="relative z-10">
@@ -96,8 +96,8 @@ const Features = () => {
               ref={el => featureRefs.current[index] = el}
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
-              <div className="absolute -top-3 -right-3 w-20 h-20 bg-agri-green/5 rounded-full -z-10"></div>
-              <div className="bg-agri-green/10 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <div className="absolute -top-3 -right-3 w-20 h-20 bg-agri-green/15 rounded-full -z-10"></div>
+              <div className="bg-agri-green/20 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
