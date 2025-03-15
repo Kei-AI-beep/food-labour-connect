@@ -1,6 +1,6 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { QuestionMarkCircle } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 
 const FAQ = () => {
   return (
@@ -22,7 +22,7 @@ const FAQ = () => {
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
                   <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
-                    <QuestionMarkCircle className="h-5 w-5 text-agri-green" />
+                    <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>とりあえず登録だけでも可能ですか？</span>
                 </div>
@@ -38,7 +38,7 @@ const FAQ = () => {
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
                   <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
-                    <QuestionMarkCircle className="h-5 w-5 text-agri-green" />
+                    <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>どのような人材を紹介していただけますか？</span>
                 </div>
@@ -54,7 +54,7 @@ const FAQ = () => {
               <AccordionTrigger className="text-lg font-medium hover:no-underline">
                 <div className="flex items-center text-left">
                   <div className="bg-agri-green/10 rounded-full p-2 mr-4 flex-shrink-0">
-                    <QuestionMarkCircle className="h-5 w-5 text-agri-green" />
+                    <HelpCircle className="h-5 w-5 text-agri-green" />
                   </div>
                   <span>費用はどのようになっていますか？</span>
                 </div>
