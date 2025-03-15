@@ -34,9 +34,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">特徴</a>
-          <a href="#research" className="text-foreground/80 hover:text-primary transition-colors">リサーチ</a>
+          <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">私たちの強み</a>
+          <a href="#research" className="text-foreground/80 hover:text-primary transition-colors">特徴</a>
           <a href="#testimonials" className="text-foreground/80 hover:text-primary transition-colors">お客様の声</a>
+          <a href="#faq" className="text-foreground/80 hover:text-primary transition-colors">よくある質問</a>
           <a href="#contact" className="btn-primary">お問い合わせ</a>
         </nav>
 
@@ -62,14 +63,14 @@ const Navbar = () => {
               className="py-2 text-foreground/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              特徴
+              私たちの強み
             </a>
             <a 
               href="#research" 
               className="py-2 text-foreground/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              リサーチ
+              特徴
             </a>
             <a 
               href="#testimonials" 
@@ -77,6 +78,13 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               お客様の声
+            </a>
+            <a 
+              href="#faq" 
+              className="py-2 text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              よくある質問
             </a>
             <a 
               href="#contact" 

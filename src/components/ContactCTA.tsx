@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { ArrowRight, PhoneCall, Mail, MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const ContactCTA = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,14 +84,29 @@ const ContactCTA = () => {
               <p className="text-xs md:text-sm text-gray-500 italic text-center">当社スタッフにお任せください！</p>
             </div>
 
-            <a href="#contact-form" className="btn-primary text-sm md:text-base">
-              無料相談する
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+              <a href="#contact-form" className="w-full sm:w-auto">
+                <Button className="w-full bg-agri-green hover:bg-agri-green/90 text-white font-medium text-base py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  無料相談する
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="tel:03-1234-5678" className="w-full sm:w-auto mt-4 sm:mt-0">
+                <Button variant="outline" className="w-full border-agri-green text-agri-green hover:bg-agri-green/10 font-medium text-base py-6 rounded-lg transition-all duration-300">
+                  <PhoneCall className="mr-2 h-5 w-5" />
+                  今すぐ電話する
+                </Button>
+              </a>
+            </div>
           </div>
 
           <div className="fade-left px-4">
-            <div id="contact-form" className="bg-white rounded-xl shadow-lg border border-gray-200 p-5 md:p-8">
+            <div id="contact-form" className="bg-white rounded-xl shadow-lg border border-gray-200 p-5 md:p-8 relative overflow-hidden">
+              {/* 強調バッジ */}
+              <div className="absolute -right-8 -top-8 bg-agri-green text-white rotate-45 px-10 py-2 shadow-md z-10 font-bold">
+                無料相談受付中
+              </div>
+              
               <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">お問い合わせフォーム</h3>
               <form className="space-y-4 md:space-y-6">
                 <div>
@@ -153,12 +169,16 @@ const ContactCTA = () => {
                   ></textarea>
                 </div>
                 
-                <button
+                <Button
                   type="submit"
-                  className="w-full btn-primary text-sm md:text-base"
+                  className="w-full bg-agri-green hover:bg-agri-green/90 text-white font-semibold text-base py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
-                  送信する
-                </button>
+                  今すぐ送信する
+                </Button>
+                
+                <p className="text-xs text-center text-gray-500 mt-4">
+                  ※ご入力いただいた情報は、お問い合わせへの回答以外には使用いたしません。
+                </p>
               </form>
             </div>
           </div>
