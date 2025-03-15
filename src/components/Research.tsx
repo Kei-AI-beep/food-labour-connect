@@ -61,7 +61,7 @@ const Research = () => {
   }, []);
 
   return (
-    <section id="research" ref={sectionRef} className="section-container bg-accent/50 rounded-3xl my-20 fade-up">
+    <section id="research" ref={sectionRef} className="section-container bg-accent/50 rounded-3xl my-20 fade-up overflow-hidden">
       <div className="text-center mb-16">
         <span className="chip mb-3">差別化ポイント</span>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -101,7 +101,7 @@ const Research = () => {
           <div
             key={index}
             ref={el => stepRefs.current[index] = el}
-            className="research-card scale-up stagger-item"
+            className="research-card scale-up stagger-item bg-white/90"
             style={{ transitionDelay: `${index * 0.1}s` }}
           >
             <div className="text-3xl font-bold text-agri-green mb-4">{step.number}</div>
