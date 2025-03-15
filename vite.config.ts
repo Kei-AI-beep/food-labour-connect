@@ -18,4 +18,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    assetsInlineLimit: 0, // ファビコンなどの小さいファイルもインライン化せずに出力する
+  }
 });
