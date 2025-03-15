@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="absolute bottom-1/3 left-1/4 w-16 h-16 border-2 border-agri-green/40 rounded-full" />
         
         {/* 背景パターン */}
-        <div className="absolute inset-0 opacity-15">
+        <div className="absolute inset-0 opacity-30">
           <img 
             src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
             alt="" 
@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none z-10" />
             <div className="relative z-0 rounded-xl overflow-hidden shadow-xl border border-gray-200">
               <img 
-                src="https://images.unsplash.com/photo-1569377349925-14b7e41f8898?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                src="https://images.unsplash.com/photo-1605013343009-c712ca98e78b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="食品工場と農業の人材" 
                 className="w-full object-cover h-64 sm:h-80 transition-transform duration-700 hover:scale-105"
                 loading="lazy"

@@ -65,9 +65,9 @@ const Features = () => {
       {/* 背景装飾 */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-70">
         <img 
-          src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80" 
+          src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80" 
           alt="" 
-          className="absolute w-full h-full object-cover opacity-20"
+          className="absolute w-full h-full object-cover opacity-25"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-transparent to-white"></div>
         
