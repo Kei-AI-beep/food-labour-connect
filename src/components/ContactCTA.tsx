@@ -76,7 +76,7 @@ const ContactCTA = () => {
 
             <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                 alt="当社スタッフにお任せください！" 
                 className="w-full h-48 object-cover rounded-md mb-4" 
               />
