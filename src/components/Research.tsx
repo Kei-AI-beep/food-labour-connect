@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import ResearchChart from './ResearchChart';
 
 const researchSteps = [
   {
@@ -72,18 +73,14 @@ const Research = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <div className="fade-right">
-          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-full">
-            <img 
-              src="https://images.unsplash.com/photo-1529651795107-e5a141e74d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" 
-              alt="現場でのリサーチ" 
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-              loading="lazy"
-            />
+        <div className="fade-right md:order-2">
+          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-full bg-white p-6">
+            <h3 className="text-center text-xl font-bold mb-6">入社3ヶ月以内の離職理由</h3>
+            <ResearchChart />
           </div>
         </div>
         
-        <div className="flex flex-col justify-center fade-left">
+        <div className="flex flex-col justify-center fade-left md:order-1">
           <h3 className="text-2xl font-bold mb-4">なぜリサーチが重要なのか</h3>
           <p className="text-gray-600 mb-6">
             食品工場や農業の現場は、一般的なオフィスワークとは全く異なる環境です。気温、湿度、作業時間、季節変動など、様々な特殊条件があります。
