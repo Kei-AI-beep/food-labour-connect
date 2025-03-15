@@ -62,41 +62,41 @@ const Research = () => {
 
   return (
     <section id="research" ref={sectionRef} className="section-container bg-accent/70 rounded-3xl my-20 fade-up overflow-hidden">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12 md:mb-16">
         <span className="chip mb-3">差別化ポイント</span>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          徹底的なリサーチから始まる <span className="text-primary">成功への道筋</span>
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 px-4">
+          徹底的なリサーチから始まる <span className="text-primary whitespace-nowrap">成功への道筋</span>
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
           私たちは、表面的なニーズだけで満足せず、現場の本質的な課題を見極めるために徹底したリサーチを行います
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16 px-4">
         <div className="fade-right md:order-2">
-          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-full bg-white p-6">
-            <h3 className="text-center text-xl font-bold mb-6">入社3ヶ月以内の離職理由</h3>
+          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-full bg-white p-4 md:p-6">
+            <h3 className="text-center text-lg md:text-xl font-bold mb-4 md:mb-6">入社3ヶ月以内の離職理由</h3>
             <ResearchChart />
           </div>
         </div>
         
         <div className="flex flex-col justify-center fade-left md:order-1">
-          <h3 className="text-2xl font-bold mb-4">なぜリサーチが重要なのか</h3>
-          <p className="text-gray-600 mb-6">
+          <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">なぜリサーチが重要なのか</h3>
+          <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
             食品工場や農業の現場は、一般的なオフィスワークとは全く異なる環境です。気温、湿度、作業時間、季節変動など、様々な特殊条件があります。
           </p>
-          <p className="text-gray-600 mb-6">
+          <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
             これらの条件を正確に把握せずに人材を送り込んでも、すぐに離職してしまうケースが多発。私たちは現場の実態を徹底的に理解することで、ミスマッチを防ぎ、長期的に活躍できる人材を見つけ出します。
           </p>
-          <div className="bg-white p-4 rounded-lg border border-agri-green/50 shadow-md">
-            <p className="text-sm text-agri-green-dark font-medium">
+          <div className="bg-white p-3 md:p-4 rounded-lg border border-agri-green/50 shadow-md">
+            <p className="text-xs md:text-sm text-agri-green-dark font-medium">
               「人材紹介会社は現場を見ずに人を送ってくる」というよくある不満を解消します。
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4">
         {researchSteps.map((step, index) => (
           <div
             key={index}
@@ -104,9 +104,9 @@ const Research = () => {
             className="research-card scale-up stagger-item bg-white/95 shadow-md border-agri-green/30 border"
             style={{ transitionDelay: `${index * 0.1}s` }}
           >
-            <div className="text-3xl font-bold text-agri-green mb-4">{step.number}</div>
-            <h4 className="text-lg font-semibold mb-2">{step.title}</h4>
-            <p className="text-gray-600 text-sm">{step.description}</p>
+            <div className="text-2xl md:text-3xl font-bold text-agri-green mb-2 md:mb-4">{step.number}</div>
+            <h4 className="text-base md:text-lg font-semibold mb-2">{step.title}</h4>
+            <p className="text-xs md:text-sm text-gray-600">{step.description}</p>
           </div>
         ))}
       </div>
