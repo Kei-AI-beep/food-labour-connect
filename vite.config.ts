@@ -3,9 +3,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// ローカル開発環境とGitHub Pages環境を区別する条件分岐
+// 環境変数に基づいてbaseパスを設定
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/food-labour-connect/" : "/",
+  base: "/",  // まずはシンプルに「/」に設定
   server: {
     host: "::",
     port: 8080,

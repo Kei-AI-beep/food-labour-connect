@@ -7,11 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
+import "./App.css"; // App.cssをインポート
 
 const queryClient = new QueryClient();
 
-// 環境に応じてbasename設定を変更
-const basename = import.meta.env.PROD ? "/food-labour-connect" : "/";
+// basename設定を修正
+const basename = "/";
 
 const App = () => {
   useEffect(() => {
