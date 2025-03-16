@@ -12,8 +12,16 @@ if (!rootElement) {
   throw new Error("Failed to find the root element");
 }
 
-createRoot(rootElement).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+console.log("Main script executing");
+console.log("Environment:", import.meta.env.MODE);
+
+try {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+  console.log("React application successfully rendered");
+} catch (error) {
+  console.error("React application failed to render:", error);
+}
