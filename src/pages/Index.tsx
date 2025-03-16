@@ -23,6 +23,8 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute('content', '食品工場や農業における人材不足の課題を、徹底的なリサーチと現場の声を活かした革新的なアプローチで解決します。');
     }
+
+    console.log("Index component mounted");
     
     return () => {
       cleanupAnimation();
